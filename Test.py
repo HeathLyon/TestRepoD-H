@@ -2,7 +2,7 @@ import tkinter as tk
 
 # Create the main window
 root = tk.Tk()
-root.title("Yo Mama")
+root.title("Yo Mama is the best")
 root.geometry("300x150")
 
 # Create a label
