@@ -1,10 +1,11 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
 
+#Prompt to create a user GUI framework (NEEDS MODIFICATION):
 # Create the main window
 root = tk.Tk()
 root.title("Ruv Predictive Model")
-root.geometry("480x320")
+root.geometry("1000x600")
 
 # Header
 header = tk.Label(root, text="Ruv Predictive Model", font=("Arial", 18))
@@ -16,8 +17,8 @@ frame.pack(padx=12, pady=6, fill=tk.BOTH, expand=True)
 
 # Model selection
 tk.Label(frame, text="Select model:").grid(row=0, column=0, sticky="w")
-model_var = tk.StringVar(value="Model A")
-model_combo = ttk.Combobox(frame, textvariable=model_var, values=["Model A", "Model B", "Model C"], state="readonly")
+model_var = tk.StringVar(value="Ruv")
+model_combo = ttk.Combobox(frame, textvariable=model_var, values=["Ruv", "Model B", "Model C"], state="readonly")
 model_combo.grid(row=0, column=1, sticky="ew", padx=6, pady=2)
 
 # Mode radio buttons
